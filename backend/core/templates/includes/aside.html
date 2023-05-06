@@ -42,8 +42,8 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link text-white "
-          href="../pages/tables.html"
+          class="nav-link text-white {% if 'table' in request.path %} active bg-gradient-primary {% endif %}"
+          href="{% url 'core:table' %}"
         >
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">table_view</i>
@@ -53,8 +53,8 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link text-white "
-          href="../pages/billing.html"
+          class="nav-link text-white {% if 'billing' in request.path %} active bg-gradient-primary {% endif %}"
+          href="{% url 'core:billing' %}"
         >
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">receipt_long</i>
@@ -64,30 +64,8 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link text-white "
-          href="../pages/virtual-reality.html"
-        >
-          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="material-icons opacity-10">view_in_ar</i>
-          </div>
-          <span class="nav-link-text ms-1">Virtual Reality</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link text-white "
-          href="../pages/rtl.html"
-        >
-          <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-            <i class="material-icons opacity-10">format_textdirection_r_to_l</i>
-          </div>
-          <span class="nav-link-text ms-1">RTL</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a
-          class="nav-link text-white "
-          href="../pages/notifications.html"
+          class="nav-link text-white {% if 'notification' in request.path %} active bg-gradient-primary {% endif %}"
+          href="{% url 'core:notification' %}"
         >
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">notifications</i>
@@ -100,8 +78,8 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link text-white "
-          href="../pages/profile.html"
+          class="nav-link text-white {% if 'profile' in request.path %} active bg-gradient-primary {% endif %}"
+          href="{% url 'core:profile' %}"
         >
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">person</i>
@@ -111,8 +89,8 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link text-white "
-          href="../pages/sign-in.html"
+          class="nav-link text-white {% if 'signin' in request.path %} active bg-gradient-primary {% endif %}"
+          href="{% url 'core:signin' %}"
         >
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">login</i>
@@ -122,8 +100,8 @@
       </li>
       <li class="nav-item">
         <a
-          class="nav-link text-white "
-          href="../pages/sign-up.html"
+          class="nav-link text-white {% if 'signup' in request.path %} active bg-gradient-primary {% endif %}"
+          href="{% url 'core:signup' %}"
         >
           <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
             <i class="material-icons opacity-10">assignment</i>

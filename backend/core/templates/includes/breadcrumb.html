@@ -13,15 +13,11 @@
     >
       {% if 'dashboard' in request.path %}
         Dashboard
-      {% elif 'tables' in request.path %}
+      {% elif 'table' in request.path %}
         Tables
       {% elif 'billing' in request.path %}
         Billing
-      {% elif 'virtual-reality' in request.path %}
-        Virtual Reality
-      {% elif 'rtl' in request.path %}
-        RTL
-      {% elif 'notifications' in request.path %}
+      {% elif 'notification' in request.path %}
         Notifications
       {% elif 'profile' in request.path %}
         Profile
@@ -37,15 +33,11 @@
   <h6 class="font-weight-bolder mb-0">
     {% if 'dashboard' in request.path %}
       Dashboard
-    {% elif 'tables' in request.path %}
+    {% elif 'table' in request.path %}
       Tables
     {% elif 'billing' in request.path %}
       Billing
-    {% elif 'virtual-reality' in request.path %}
-      Virtual Reality
-    {% elif 'rtl' in request.path %}
-      RTL
-    {% elif 'notifications' in request.path %}
+    {% elif 'notification' in request.path %}
       Notifications
     {% elif 'profile' in request.path %}
       Profile
