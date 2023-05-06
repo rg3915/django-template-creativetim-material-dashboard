@@ -36,4 +36,10 @@ python manage.py migrate
 python manage.py createsuperuser --username="admin" --email=""
 ```
 
-![](dashboard.png)
+![](img/dashboard.png)
+![](img/table.png)
+![](img/billing.png)
+![](img/notification.png)
+![](img/profile.png)
+![](img/signin.png)
+![](img/signup.png)
