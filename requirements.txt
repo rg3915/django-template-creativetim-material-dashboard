@@ -1,0 +1,4 @@
+Django==4.2.1
+django-extensions==3.2.1
+djhtml==3.0.6
+python-decouple==3.8
