@@ -263,6 +263,100 @@
           </div>
           <div class="card-body px-0 pb-2">
             <div class="table-responsive p-0">
+
+            <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn bg-gradient-primary ms-3"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Add
+              </button>
+
+            <!-- Modal -->
+              <div
+                id="exampleModal"
+                class="modal fade"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5
+                        id="exampleModalLabel"
+                        class="modal-title font-weight-normal"
+                      >Modal title</h5>
+                      <button
+                        type="button"
+                        class="btn-close text-dark"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <!-- START form -->
+                    <form
+                      role="form text-left"
+                      action="."
+                      method="POST"
+                      enctype="multipart/form-data"
+                    >
+                      {% csrf_token %}
+                      <div class="modal-body">
+                        <div class="card card-plain">
+                          <div class="card-header pb-0 text-left">
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </div>
+                          <div class="card-body pb-3">
+                            <div class="input-group input-group-outline my-3">
+                              <label class="form-label">Name</label>
+                              <input
+                                type="text"
+                                class="form-control"
+                              >
+                            </div>
+                            <div class="input-group input-group-outline my-3">
+                              <label class="form-label">Email</label>
+                              <input
+                                type="email"
+                                class="form-control"
+                              >
+                            </div>
+                            <div class="input-group input-group-outline my-3">
+                              <label class="form-label">Password</label>
+                              <input
+                                type="password"
+                                class="form-control"
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn bg-gradient-secondary"
+                          data-bs-dismiss="modal"
+                        >Close</button>
+                        <button
+                          type="submit"
+                          class="btn bg-gradient-primary"
+                        >Save</button>
+                      </div>
+                    </form>
+                  <!-- END form -->
+                  </div>
+                </div>
+              </div>
+
               <table class="table align-items-center justify-content-center mb-0">
                 <thead>
                   <tr>
